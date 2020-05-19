@@ -1,0 +1,7 @@
+tavy315_sylius_sales_representatives_admin:
+    resource: routing/admin.yaml
+    prefix: /admin
+    
+tavy315_sylius_sales_representatives_admin_api:
+    resource: routing/admin_api.yaml
+    prefix: /api/v{version}

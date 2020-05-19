@@ -1,0 +1,6 @@
+jms_serializer:
+    metadata:
+        directories:
+            tavy315-sales-representatives:
+                namespace_prefix: "Tavy315\\SyliusSalesRepresentativesPlugin\\Model"
+                path: "@Tavy315SyliusSalesRepresentativesPlugin/Resources/config/serializer"

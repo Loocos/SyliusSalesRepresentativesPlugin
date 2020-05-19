@@ -1,0 +1,25 @@
+Tavy315\SyliusSalesRepresentativesPlugin\Model\SalesRepresentative:
+    exclusion_policy: ALL
+    xml_root_name: sales_representative
+    properties:
+        id:
+            expose: true
+            type: integer
+            xml_attribute: true
+            groups: [Default, Detailed]
+        code:
+            expose: true
+            type: string
+            groups: [Default, Detailed]
+        email:
+            expose: true
+            type: string
+            groups: [Default, Detailed]
+        name:
+            expose: true
+            type: string
+            groups: [Default, Detailed]
+        phoneNumber:
+            expose: true
+            type: string
+            groups: [Default, Detailed]

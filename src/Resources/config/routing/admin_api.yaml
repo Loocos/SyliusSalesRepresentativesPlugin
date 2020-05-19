@@ -1,0 +1,11 @@
+tavy315_sylius_sales_representatives_admin_api_sales_representative:
+    resource: |
+        alias: tavy315_sylius_sales_representatives.sales_representative
+        criteria:
+            code: $code
+        form: Tavy315\SyliusSalesRepresentativesPlugin\Form\Type\SalesRepresentativeType
+        grid: tavy315_sylius_sales_representatives_admin_sales_representative
+        identifier: code
+        section: admin_api
+        serialization_version: $version
+    type: sylius.resource_api

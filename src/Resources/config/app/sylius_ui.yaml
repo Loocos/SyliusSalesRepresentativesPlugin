@@ -1,0 +1,5 @@
+sylius_ui:
+    events:
+        sylius.admin.customer.update.form:
+            blocks:
+                sales_representative: '@Tavy315SyliusSalesRepresentativesPlugin/Admin/Customer/_form.html.twig'

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                                      http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Tavy315\SyliusSalesRepresentativesPlugin\Model\SalesRepresentative" table="tavy315_sylius_sales_representative">
+        <id name="id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+        <field name="code" column="code" type="string" unique="true" />
+        <field name="name" type="string" length="255" />
+        <field name="email" type="string" length="255" nullable="true" />
+        <field name="phoneNumber" column="phone_number" type="string" length="255" nullable="true" />
+    </entity>
+</doctrine-mapping>

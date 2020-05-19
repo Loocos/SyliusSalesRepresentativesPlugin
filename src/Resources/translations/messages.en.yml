@@ -1,0 +1,23 @@
+tavy315_sylius_sales_representatives:
+    ui:
+        code: Code
+        edit_sales_representative: Edit sales representative
+        email: Email
+        name: Name
+        new_sales_representative: New sales representative
+        phone_number: Phone number
+        sales_representatives: Sales representatives
+    form:
+        sales_representative: Sales representative
+    validation:
+        code:
+            not_blank: Code should not be blank.
+            unique: Code has to be unique.
+            regex: Code can only be comprised of letters, numbers, dashes and underscores.
+        email:
+            invalid: This email is invalid.
+            max_length: Email must have at most 255 characters.
+        name:
+            not_blank: Name should not be blank.
+            min_length: Name must have at least 2 characters.
+            max_length: Name must have at most 255 characters.

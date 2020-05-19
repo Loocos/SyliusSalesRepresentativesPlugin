@@ -1,0 +1,16 @@
+tavy315_sylius_sales_representatives_admin_sales_representatives:
+    resource: |
+        alias: tavy315_sylius_sales_representatives.sales_representative
+        grid: tavy315_sylius_sales_representatives_admin_sales_representative
+        permission: true
+        redirect: update
+        section: admin
+        templates: SyliusAdminBundle:Crud
+        vars:
+            all:
+                templates:
+                    form: "@Tavy315SyliusSalesRepresentativesPlugin/Admin/SalesRepresentative/_form.html.twig"
+                    header_title: "@Tavy315SyliusSalesRepresentativesPlugin/Admin/SalesRepresentative/_headerTitle.html.twig"
+            index:
+                icon: 'user'
+    type: sylius.resource

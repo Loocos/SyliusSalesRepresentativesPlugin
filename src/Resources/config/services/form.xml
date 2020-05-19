@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="tavy315_sylius_sales_representatives.form.type.sales_representative.validation_groups" type="collection">
+            <parameter>tavy315_sylius_sales_representatives</parameter>
+        </parameter>
+    </parameters>
+    <services>
+        <service id="tavy315_sylius_sales_representatives.form.type.sales_representative"
+                 class="Tavy315\SyliusSalesRepresentativesPlugin\Form\Type\SalesRepresentativeType">
+            <argument>%tavy315_sylius_sales_representatives.model.sales_representative.class%</argument>
+            <argument>%tavy315_sylius_sales_representatives.form.type.sales_representative.validation_groups%</argument>
+            <tag name="form.type" />
+        </service>
+
+        <service id="tavy315_sylius_sales_representatives.form.extension.type.customer"
+                 class="Tavy315\SyliusSalesRepresentativesPlugin\Form\Extension\CustomerTypeExtension">
+            <tag name="form.type_extension" extended_type="Sylius\Bundle\CustomerBundle\Form\Type\CustomerType" />
+        </service>
+
+        <service id="tavy315_sylius_sales_representatives.form.type.sales_representative_choice"
+                 class="Tavy315\SyliusSalesRepresentativesPlugin\Form\Type\SalesRepresentativeChoiceType">
+            <argument type="service" id="tavy315_sylius_sales_representatives.repository.sales_representative" />
+            <tag name="form.type" />
+        </service>
+
+        <service id="tavy315_sylius_sales_representatives.form.extension.type.api_customer"
+                 class="Tavy315\SyliusSalesRepresentativesPlugin\Form\Extension\CustomerProfileTypeExtension">
+            <tag name="form.type_extension" extended_type="Sylius\Bundle\AdminApiBundle\Form\Type\CustomerProfileType" />
+        </service>
+    </services>
+</container>
