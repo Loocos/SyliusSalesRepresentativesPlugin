@@ -8,27 +8,13 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": ">=7.4",
         "sylius/sylius": "^1.8"
-    },
-    "require-dev": {
-        "phpstan/phpstan-doctrine": "^0.11",
-        "phpstan/phpstan-shim": "^0.11",
-        "phpstan/phpstan-webmozart-assert": "^0.11",
-        "sensiolabs/security-checker": "^5.0",
-        "sylius-labs/coding-standard": "^3.1"
     },
     "autoload": {
         "psr-4": {
             "Tavy315\\SyliusSalesRepresentativesPlugin\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "analyse": [
-            "vendor/bin/phpstan analyse -c phpstan.neon -l max src"
-        ],
-        "check-style": "vendor/bin/ecs check src"
-    }
+    "prefer-stable": true
 }
