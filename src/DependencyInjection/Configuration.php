@@ -48,7 +48,6 @@ final class Configuration implements ConfigurationInterface
                                     ->addDefaultsIfNotSet()
                                     ->children()
                                         ->scalarNode('model')->defaultValue(SalesRepresentative::class)->cannotBeEmpty()->end()
-                                        ->scalarNode('interface')->defaultValue(SalesRepresentativeInterface::class)->cannotBeEmpty()->end()
                                         ->scalarNode('controller')->defaultValue(ResourceController::class)->cannotBeEmpty()->end()
                                         ->scalarNode('factory')->defaultValue(Factory::class)->end()
                                         ->scalarNode('form')->defaultValue(SalesRepresentativeType::class)->cannotBeEmpty()->end()

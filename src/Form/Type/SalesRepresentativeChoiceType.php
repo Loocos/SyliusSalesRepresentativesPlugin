@@ -14,8 +14,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 final class SalesRepresentativeChoiceType extends AbstractType
 {
-    /** @var RepositoryInterface */
-    private $salesRepresentativeRepository;
+    private RepositoryInterface $salesRepresentativeRepository;
 
     public function __construct(RepositoryInterface $salesRepresentativeRepository)
     {

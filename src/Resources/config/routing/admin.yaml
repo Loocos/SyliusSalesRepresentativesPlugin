@@ -5,7 +5,7 @@ tavy315_sylius_sales_representatives_admin_sales_representatives:
         permission: true
         redirect: update
         section: admin
-        templates: SyliusAdminBundle:Crud
+        templates: "@SyliusAdmin/Crud"
         vars:
             all:
                 templates:
