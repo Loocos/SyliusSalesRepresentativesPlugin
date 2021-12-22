@@ -1,0 +1,23 @@
+tavy315_sylius_sales_representatives:
+  ui:
+    code: Code
+    edit_sales_representative: Modifier le représentant des ventes
+    email: Email
+    name: Nom
+    new_sales_representative: Nouveau représentant commercial
+    phone_number: Numéro de téléphone
+    sales_representatives: Représentants commerciaux
+  form:
+    sales_representative: Représentant commercial
+  validation:
+    code:
+      not_blank: Le code ne doit pas être vide.
+      unique: Le code doit être unique.
+      regex: Le code ne peut être composé que de lettres, de chiffres, de tirets et de traits de soulignement.
+    email:
+      invalid: Cet email n'est pas valide.
+      max_length: L'email doit comporter au maximum 255 caractères.
+    name:
+      not_blank: Le nom ne doit pas être vide.
+      min_length: Le nom doit comporter au moins 2 caractères.
+      max_length: Le nom doit comporter au maximum 255 caractères.
