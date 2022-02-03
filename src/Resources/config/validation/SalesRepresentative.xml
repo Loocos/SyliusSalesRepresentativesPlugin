@@ -39,7 +39,7 @@
             </constraint>
             <constraint name="Email">
                 <option name="message">tavy315_sylius_sales_representatives.validation.email.invalid</option>
-                <option name="strict">true</option>
+                <option name="mode">strict</option>
                 <option name="groups">tavy315_sylius_sales_representatives</option>
             </constraint>
         </property>
